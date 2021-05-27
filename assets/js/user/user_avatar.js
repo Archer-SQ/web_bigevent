@@ -17,7 +17,6 @@ $(function() {
         // 自动触发文件上传
         $('#file').trigger('click');
     });
-
     // 为文件框绑定change事件
     $('#file').on('change', function(e) {
         // 获取用户选择的文件
@@ -30,6 +29,7 @@ $(function() {
         var file = e.target.files[0];
         // 2.将文件转化为路径
         var imgURL = URL.createObjectURL(file);
+        console.log(imgURL);
         // 3.重新初始化剪裁区域
         $image
             .cropper('destroy') //销毁旧的剪裁区域
