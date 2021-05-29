@@ -67,7 +67,7 @@ $(function() {
         });
     });
     // 通过tbody代理为form-edit绑定submit事件
-    $('tbody').on('submit', '#form-edit', function(e) {
+    $('body').on('submit', '#form-edit', function(e) {
         // 阻止表单默认的提交事件
         e.preventDefault();
         $.ajax({
