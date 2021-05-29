@@ -32,7 +32,7 @@ $(function() {
     $image.cropper(options);
     // 为选择封面的按钮，绑定点击事件处理函数
     $('#btnChooseImage').on('click', function() {
-        $('#coverFile').click()
+        $('#coverFile').trigger('click');
     });
     // 监听 coverFile 的 change 事件，获取用户选择的文件列表
     $('#coverFile').on('change', function(e) {
