@@ -1,0 +1,4 @@
+# 忽略api_server目录下的node_modules目录下的所有文件
+api_server/node_modules
+# 忽略api_server目录下的package-lock.json文件
+api_server/package-lock.json
